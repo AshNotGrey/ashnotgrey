@@ -37,16 +37,16 @@ Check out the live demo of the portfolio [here](https://ashnotgrey.vercel.app/).
 
 ## Installation
 
-To get a local copy up and running, follow these steps:
+To get a local copy up and running, follow these steps, of course do change to your actualname or some other name:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/3d-portfolio.git
+   git clone https://github.com/your-username/ashnotgrey.git
    ```
 
 2. Navigate to the project directory:
    ```sh
-   cd 3d-portfolio/client
+   cd ashnotgrey/client
    ```
 
 3. Install dependencies:
