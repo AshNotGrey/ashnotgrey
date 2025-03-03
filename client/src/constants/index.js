@@ -335,4 +335,4 @@ export const socials = {
   Instagram: 'https://www.instagram.com/ash_not_grey/',
   email: 'official.de.ash@gmail.com'
 }
-export const HakiAttribution = { text: 'Powered by HAKI', link: 'https://haki.com', logo: '/assets/haki.svg' };
+export const HakiAttribution = { text: 'Powered by HAKI', link: 'https://linktr.ee/HakiCorporation', logo: '/assets/haki.svg' };
