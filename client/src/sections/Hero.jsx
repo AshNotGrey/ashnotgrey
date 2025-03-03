@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { Suspense, useState, useEffect } from "react";
 import HackerRoom from "../components/HackerRoom";
 import { alias, calculateSizes, heroTag } from "../constants";
 import { Canvas } from "@react-three/fiber";
@@ -20,16 +20,27 @@ const Hero = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   const isTablet = useMediaQuery({ query: "(max-width: 1024px, min-width: 769px)" });
   const sizes = calculateSizes(isSmall, isMobile, isTablet);
+  {
+    /* Enhance with gsap */
+  }
+  const [currentTag, setCurrentTag] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentTag((prevTag) => (prevTag + 1) % heroTag.length);
+    }, 7000); // Change tag every 7 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className='min-h-screen w-full flex flex-col relative' id='home'>
       <div className='w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3'>
         <p className='sm:text-3xl text-2xl font-medium text-white text-center font-generalsans'>
-          {/* perform the name switch animation here */}
-          Hi, I&apos;m {alias} ! {/* Look for a line art or hand glyph */}
-          <span className='waving-hand'>👋🏽</span>
+          {/* Look for a line art or hand glyph */}
+          Hi, I am {alias} !<span className='waving-hand'>👋🏽</span>
         </p>
-        {/* perform the tag switch animation here */}
-        <p className='hero_tag text-gray_gradient capitalize'>{heroTag}</p>
+        <p className='hero_tag text-gray_gradient capitalize'>{heroTag[currentTag]}</p>
         <div className='w-full h-full absolute inset-0'>
           {/* The Canvas component is from @react-three/fiber */}
           <Canvas className='w-full h-full'>
