@@ -325,41 +325,42 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
   {
     id: 1,
-    name: 'Doginal Duppets',
-    pos: 'Frontend Developer',
-    duration: '2024 - Contract Based',
-    title: "Some brief info about the crypto project to be gotten from them",
-    icon: '/assets/framer.svg', // todo get from site and edit in figma
+    name: 'African Prodigies',
+    pos: 'NFT Artist & 2D Animator',
+    duration: '2021 - 2022',
+    title: "Adapted quickly to new technologies during the NFT boom of 2021, delivering standout art and animations.",
+    icon: '/assets/AshNFT.png',
     animation: 'clapping',
   },
   {
     id: 2,
-    name: 'Iphone 15 pro (Haki Edition)',
-    pos: 'Web Developer',
-    duration: '2024',
-    title: "Some brief info about the project and the whole HAKI Edition thingy",
-    icon: '/assets/figma.svg', // todo get from apple website
-    animation: 'salute',
-  },
-  {
-    id: 3,
-    name: 'Haki Labs',
+    name: 'Haki | Haki Labs',
     pos: 'Lead Full Stack Developer',
-    duration: '2024 - Current Day',
-    title: "Some text about Haki Labs and all",
-    icon: '/assets/notion.svg', // todo figure out and make in figma
+    duration: '2022 - Current Day',
+    title: "Played a pivotal role in project lifecycles by devising innovative strategies, contributing 30% of the team's dynamic output.",
+    icon: '/assets/HAKI-logo-svg.svg',
     animation: 'victory',
   },
   {
-    id: 4,
-    name: 'Freelancer | Upwork | Indeed ...others',
-    pos: 'Freelance Developer',
-    duration: '2023 - Current Day',
-    title: "Some text about freelancing and all talk about some projects that you can't take credit for here",
-    icon: '/assets/notion.svg', // todo make a group of all thier logos
+    id: 3,
+    name: 'Doginal Duppets',
+    pos: 'Frontend Developer',
+    duration: '2024 - Contract Based',
+    title: "Engineered the project in under 24 man-hours, enabling an immediate and successful launch.",
+    icon: '/assets/Duppet.png',
     animation: 'clapping',
   },
+  {
+    id: 4,
+    name: 'Chuck',
+    pos: 'Frontend Developer',
+    duration: '2024 - Contract Based',
+    title: "Developed the project in less than 24 man-hours and identified a key compatibility skew in the Uniswap widget API, ensuring a timely launch.",
+    icon: '/assets/Chuck.png',
+    animation: 'salute',
+  },
 ];
+
 
 // Personal information constants
 export const nameBrand = 'Obiajulu Anthony';
