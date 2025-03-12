@@ -14,7 +14,7 @@ import { useEffect, useRef } from "react";
 
 const ProjectsMonitor = (props) => {
   const { nodes, materials } = useGLTF("/models/Projects monitor.glb");
-  const texture = useVideoTexture(props.texture || "/textures/project/project1.mp4");
+  const texture = useVideoTexture(props.texture || "/textures/project/Iphone 15 pro.mp4");
   const group = useRef();
   useGSAP(() => {
     gsap.from(group.current.rotation, {
@@ -25,9 +25,9 @@ const ProjectsMonitor = (props) => {
   }, [texture]);
   useEffect(() => {
     if (texture) {
-      texture.flipY = false; // Flip the video vertically
+      texture.flipY = props.flipY; // Flip the video vertically
     }
-  }, [texture]);
+  }, [texture, props.flipY]);
   return (
     <group {...props} dispose={null} ref={group}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
@@ -118,5 +118,6 @@ const ProjectsMonitor = (props) => {
 useGLTF.preload("/models/Projects monitor.glb");
 ProjectsMonitor.propTypes = {
   texture: PropTypes.string,
+  flipY: PropTypes.bool,
 };
 export default ProjectsMonitor;

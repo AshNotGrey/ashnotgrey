@@ -14,9 +14,15 @@ const NavBar = () => {
         {navLinks.map(({ name, id, href }) => (
           // todo convert to use react-router-dom Li
           <li key={id} className='nav-li'>
-            <a href={href} className='nav-li_a'>
-              {name}
-            </a>
+            {name === "Resume" ? (
+              <a href={href} target='_blank' rel='noreferrer' className='nav-li_a'>
+                {name}
+              </a>
+            ) : (
+              <a href={href} className='nav-li_a'>
+                {name}
+              </a>
+            )}
           </li>
         ))}
       </ul>

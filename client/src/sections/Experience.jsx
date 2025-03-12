@@ -4,7 +4,7 @@ import { Suspense, useState } from "react";
 import { workExperiences } from "../constants";
 import { OrbitControls } from "@react-three/drei";
 import Developer from "../components/Developer";
-
+// todo add button for viewing resume and downloading it
 const Experience = () => {
   const [animation, setanimation] = useState("idle");
   return (

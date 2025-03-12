@@ -60,6 +60,17 @@ const Projects = () => {
                 </div>
               ))}
             </div>
+            {/* Add link to purchase as a template if available */}
+            {currentProject.purchaseLink && (
+              <a
+                href={currentProject.purchaseLink}
+                target='_blank'
+                rel='noreferrer'
+                className='flex items-center gap-2 cursor-pointer text-white-600'>
+                <p className='capitalize'>Purchase template</p>
+                <img src='/assets/arrow-up.png' className='w-3 h-3' alt='arrow' />
+              </a>
+            )}
             <a
               href={currentProject.href}
               target='_blank'
@@ -94,7 +105,7 @@ const Projects = () => {
                 <group position={[0, 4, 0]} rotation={[0.1, -3, 0]} scale={1.75}>
                   {/* <group position={[0, -3, 0]} rotation={[0, -0.1, 0]} scale={2}> */}
                   {/* <DemoComputer texture={currentProject.texture} /> */}
-                  <ProjectsMonitor texture={currentProject.texture} />
+                  <ProjectsMonitor texture={currentProject.texture} flipY={currentProject.flip} />
                 </group>
               </Suspense>
             </Center>

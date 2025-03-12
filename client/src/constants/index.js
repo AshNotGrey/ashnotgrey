@@ -26,7 +26,7 @@ export const navLinks = [
   {
     id: 5,
     name: 'Resume',
-    href: 'https://tr.ee/XKFysG99l0',
+    href: 'https://tr.ee/9GDhl7V8PW',
   },
 ];
 
@@ -72,23 +72,75 @@ export const clientReviews = [
 // todo replace with yours
 /**
  * Projects to be displayed in the portfolio.
- * @type {Array<{title: string, desc: string, subdesc: string, href: string, texture: string, logo: string, logoStyle: object, spotlight: string, tags: Array<{id: number, name: string, path: string}>}>}
+ * @type {Array<{title: string, desc: string, subdesc: string, href: string, texture: string, logo: string, logoStyle: object, spotlight: string, tags: Array<{id: number, name: string, path: stringflip: false,
+ * }>}>}
  */
 export const myProjects = [
   {
-    title: 'Podcastr - AI Podcast Platform',
-    desc: 'Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.',
-    subdesc:
-      'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.',
-    href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
-    texture: '/textures/project/project1.mp4',
-    logo: '/assets/project-logo1.png',
+    title: 'Iphone 15 pro (Haki Edition)',
+    desc: "Leveraging the latest technologies, the iPhone 15 Pro landing page showcases the device's cutting-edge features and design elements. The Haki Edition adds a touch of luxury and exclusivity, setting it apart from other devices on the market.",
+
+    subdesc: "The Haki Edition (surreal) is a limited-edition release that combines the iconic iPhone design with premium materials and finishes. The landing page highlights the device's unique features, including the Haki logo, custom color options, and exclusive accessories.",
+    href: 'https://iphone-main.vercel.app/',
+    purchaseLink: false,
+    texture: '/textures/project/Iphone 15 pro.mp4',
+    logo: '/assets/Apple.svg',
     logoStyle: {
-      backgroundColor: '#2A1816',
-      border: '0.2px solid #36201D',
-      boxShadow: '0px 0px 60px 0px #AA3C304D',
+      backgroundColor: '#000000',
+      border: '0.2px solid #000000',
+      boxShadow: '0px 0px 60px 0px #FFFFFF',
     },
-    spotlight: '/assets/spotlight1.png',
+    spotlight: '/assets/White-Iphone.png',
+    flip: false,
+    tags: [
+      {
+        id: 1,
+        name: 'Figma',
+        path: '/assets/figma.svg',
+      },
+      {
+        id: 2,
+        name: 'React.js',
+        path: '/assets/react.svg',
+      },
+      {
+        id: 3,
+        name: 'Gsap',
+        path: '/assets/Gsap.svg',
+      },
+      {
+        id: 4,
+        name: 'Three JS',
+        path: '/assets/ThreeJS.svg',
+      },
+      {
+        id: 5,
+        name: 'Blender',
+        path: '/assets/Blender.svg',
+      },
+      {
+        id: 6,
+        name: 'TailwindCSS',
+        path: 'assets/tailwindcss.png',
+      },
+    ],
+  },
+  {
+    title: 'Chuck',
+    desc: "CHUCK is a dog-themed meme coin celebrating the bond between iconic figures and their dogs. Stealth-launched for decentralization, it’s a deflationary token with burn campaigns, exclusive community perks, and access to NFTs, games, and a market insights bot.",
+
+    subdesc: "Built on Base, CHUCK leverages smart contracts for automated burns, community rewards, and secure transactions. It integrates Telegram bots for market data and supports NFT utilities within its ecosystem.",
+    href: 'https://chuck-testing.vercel.app/',
+    purchaseLink: false,
+    texture: '/textures/project/Chuck.mp4',
+    logo: '/assets/Chuck.png',
+    logoStyle: {
+      backgroundColor: '#FEE59C',
+      border: '0.2px solid #6B4F1D',
+      boxShadow: '0px 0px 60px 0px #FFD7004D',
+    },
+    spotlight: '/assets/Yellow_Chuck.png',
+    flip: false,
     tags: [
       {
         id: 1,
@@ -97,171 +149,152 @@ export const myProjects = [
       },
       {
         id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
+        name: 'Bootstap',
+        path: '/assets/bootstrap.png',
       },
       {
         id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
-      },
-      {
-        id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
+        name: 'Uniswap',
+        path: '/assets/Uniswap.png',
       },
     ],
   },
   {
-    title: 'LiveDoc - Real-Time Google Docs Clone',
-    desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.',
-    subdesc:
-      'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
-    href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
-    texture: '/textures/project/project2.mp4',
-    logo: '/assets/project-logo2.png',
+    title: 'Doginal Duppets',
+    desc: "Doginal Duppets is an innovative project within the Dogecoin ecosystem, blending the charm of handcrafted puppets with the security and permanence of blockchain technology. Inspired by the esoteric and absurd, our collection of puppets is unlike anything you've ever seen before. Each duppet is meticulously created with basic tools, loads of effort, and boundless passion.",
+
+    subdesc: "Built to match the clients exact description and requirements,playing a major role in the marketing of the NFT collection, featured on their main X (then Twitter) page.",
+    href: 'https://www.doginalduppets.com/',
+    purchaseLink: false,
+    texture: '/textures/project/Duppets.mp4',
+    logo: '/assets/Duppet.jpg',
     logoStyle: {
-      backgroundColor: '#13202F',
-      border: '0.2px solid #17293E',
-      boxShadow: '0px 0px 60px 0px #2F6DB54D',
+      backgroundColor: '#E8D5B4',
+      border: '0.2px solid #6B4F1D',
+      boxShadow: '0px 0px 60px 0px #FFD7004D',
     },
-    spotlight: '/assets/spotlight2.png',
+    spotlight: '/assets/Yellow_Chuck.png',
+    flip: false,
     tags: [
       {
         id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
-      },
-      {
-        id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
-      },
-      {
-        id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
-      },
-      {
-        id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
-      },
+        name: 'Bootstap',
+        path: '/assets/bootstrap.png',
+      }
     ],
   },
   {
-    title: 'CarePulse - Health Management System',
-    desc: 'An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.',
-    subdesc:
-      'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
-    href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
-    texture: '/textures/project/project3.mp4',
-    logo: '/assets/project-logo3.png',
+    title: 'Bingo Book',
+    desc: "Bingo Book is a web application that allows users to create and share bingo boards. Users can create boards with custom titles and categories, and add items to each category. Boards can be shared with a unique URL, and users can mark items as completed",
+
+    subdesc: "An experimental project created to learn more about React, Redux, and Figma amongst other things. I also wanted to learn more about how to create a web application that allows users to share data with each other.",
+    href: 'https://www.figma.com/proto/eTI0VW2Psuezc64MJHjSv7?node-id=0-1&t=hFE981BXA64zstdZ-6',
+    purchaseLink: false,
+    texture: '/textures/project/Bingo-book.mp4',
+    logo: '/assets/Bingo-book.png',
     logoStyle: {
-      backgroundColor: '#60f5a1',
-      background:
-        'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
-      border: '0.2px solid rgba(208, 213, 221, 1)',
-      boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
+      backgroundColor: '#1E1E1E',
+      border: '0.2px solid #1E1E1E',
+      boxShadow: '0px 0px 60px 0px #1EFF1E',
     },
     spotlight: '/assets/spotlight3.png',
+    flip: false,
     tags: [
       {
         id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
-      },
-      {
-        id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
-      },
-      {
-        id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
-      },
-      {
-        id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
+        name: 'Figma',
+        path: '/assets/figma.svg',
       },
     ],
   },
   {
-    title: 'Horizon - Online Banking Platform',
-    desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.',
-    subdesc:
-      'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
-    href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
-    texture: '/textures/project/project4.mp4',
-    logo: '/assets/project-logo4.png',
+    title: 'African Prodigies',
+    desc: "The African Prodigies by Obiajulu Anthony, is a celebration to all iconic Africans who through their hard work have put their nation and brands on the map. Each art work here is inspired by a particular figure therefore making each peculiar, some are a blend of traits from different prodigies even, all just to make sure that each NFT can be even if not totally but related with the prodigy of which it was inspired by.",
+
+    subdesc: "The collection is to pass a message of hope to upcoming stars and to further burn into the hearts of all the greatness of the African giants. Leveraging technologies like Blender, Figma , and ethereum blockchain, the collection is a blend of art and technology.",
+    href: 'https://opensea.io/collection/africanprodigies',
+    purchaseLink: false,
+    texture: '/textures/project/African-Prodigies.mp4',
+    logo: '/assets/AshNFT.png',
     logoStyle: {
-      backgroundColor: '#0E1F38',
-      border: '0.2px solid #0E2D58',
-      boxShadow: '0px 0px 60px 0px #2F67B64D',
+      backgroundColor: '#000000',
+      border: '0.2px solid #000000',
+      boxShadow: '0px 0px 60px 0px #FFD7004D',
     },
-    spotlight: '/assets/spotlight4.png',
+    spotlight: '/assets/Yellow_Chuck.png',
+    flip: false,
     tags: [
       {
         id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
+        name: 'Figma',
+        path: '/assets/figma.svg',
       },
       {
         id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
+        name: 'Blender',
+        path: '/assets/Blender.svg',
       },
       {
         id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
+        name: 'Opensea',
+        path: '/assets/opensea.png',
       },
       {
         id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
+        name: 'Ethereum',
+        path: '/assets/Ethereum.svg',
       },
     ],
   },
   {
-    title: 'Imaginify - AI Photo Manipulation App',
-    desc: 'Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.',
-    subdesc:
-      'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.',
-    href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
-    texture: '/textures/project/project5.mp4',
-    logo: '/assets/project-logo5.png',
+    title: '3D Portfolio',
+    desc: "What better way to showcase your work than in a 3D portfolio? This interactive experience allows users to explore your projects in a unique and engaging way. Each project is displayed on the screen of a 3D monitor, giving users a realistic view of your work.",
+
+    subdesc: "Built using React, Three.js, and TailwindCSS, this 3D portfolio is a fun and interactive way to showcase your projects. Users can click on each project to learn more and even interact with the 3D models. It's a creative and innovative way to present your work to potential clients and employers.",
+    href: 'https://ashnotgrey.vercel.app/',
+    purchaseLink: false,
+    texture: '/textures/project/3D-portfolio.mp4',
+    logo: '/assets/Sigil.svg',
     logoStyle: {
-      backgroundColor: '#1C1A43',
-      border: '0.2px solid #252262',
-      boxShadow: '0px 0px 60px 0px #635BFF4D',
+      backgroundColor: '#000000',
+      border: '0.2px solid #000000',
+      boxShadow: '0px 0px 60px 0px #FFFFFF',
     },
-    spotlight: '/assets/spotlight5.png',
+    spotlight: '/assets/White-Iphone.png',
+    flip: false,
     tags: [
       {
         id: 1,
+        name: 'Figma',
+        path: '/assets/figma.svg',
+      },
+      {
+        id: 2,
         name: 'React.js',
         path: '/assets/react.svg',
       },
       {
-        id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
-      },
-      {
         id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
+        name: 'Gsap',
+        path: '/assets/Gsap.svg',
       },
       {
         id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
+        name: 'Three JS',
+        path: '/assets/ThreeJS.svg',
+      },
+      {
+        id: 5,
+        name: 'Blender',
+        path: '/assets/Blender.svg',
+      },
+      {
+        id: 6,
+        name: 'TailwindCSS',
+        path: 'assets/tailwindcss.png',
       },
     ],
-  },
+  }
 ];
 
 /**
@@ -292,30 +325,39 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
   {
     id: 1,
-    name: 'Framer',
-    pos: 'Lead Web Developer',
-    duration: '2022 - Present',
-    title: "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-    icon: '/assets/framer.svg',
-    animation: 'victory',
-  },
-  {
-    id: 2,
-    name: 'Figma',
-    pos: 'Web Developer',
-    duration: '2020 - 2022',
-    title: "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-    icon: '/assets/figma.svg',
+    name: 'Doginal Duppets',
+    pos: 'Frontend Developer',
+    duration: '2024 - Contract Based',
+    title: "Some brief info about the crypto project to be gotten from them",
+    icon: '/assets/framer.svg', // todo get from site and edit in figma
     animation: 'clapping',
   },
   {
-    id: 3,
-    name: 'Notion',
-    pos: 'Junior Web Developer',
-    duration: '2019 - 2020',
-    title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-    icon: '/assets/notion.svg',
+    id: 2,
+    name: 'Iphone 15 pro (Haki Edition)',
+    pos: 'Web Developer',
+    duration: '2024',
+    title: "Some brief info about the project and the whole HAKI Edition thingy",
+    icon: '/assets/figma.svg', // todo get from apple website
     animation: 'salute',
+  },
+  {
+    id: 3,
+    name: 'Haki Labs',
+    pos: 'Lead Full Stack Developer',
+    duration: '2024 - Current Day',
+    title: "Some text about Haki Labs and all",
+    icon: '/assets/notion.svg', // todo figure out and make in figma
+    animation: 'victory',
+  },
+  {
+    id: 4,
+    name: 'Freelancer | Upwork | Indeed ...others',
+    pos: 'Freelance Developer',
+    duration: '2023 - Current Day',
+    title: "Some text about freelancing and all talk about some projects that you can't take credit for here",
+    icon: '/assets/notion.svg', // todo make a group of all thier logos
+    animation: 'clapping',
   },
 ];
 
@@ -330,7 +372,8 @@ export const heroTag = [
   'A Backend Developer',
   'Designing user-centric experiences',
   'A Frontend Developer',
-  'Problem Solver',
+  'A Problem Solver',
+  'I am HIM',
   'A Brand Developer',
   'Empowering digital transformation',
   'An Innovator',
@@ -351,7 +394,7 @@ export const heroTag = [
 ];
 export const gridSubIntro = 'Full Stack Developer & UI/UX Designer with 4+ years of experience in building responsive web applications. Skilled in React, Next.js, TypeScript, Node.js, and MongoDB. Passionate about creating intuitive user experiences and optimizing performance.';
 export const techStack = 'I specialize in the MERN stack (MongoDB, Express, React, Node.js). I build dynamic web applications and websites, always expanding my skillset. Passionate about creating innovative solutions and dedicated to delivering high-quality work that exceeds client expectations.';
-export const labelsData = [{ lat: 5.518690, lng: 5.737622, color: "white", size: 20, text: "You can find me here!" }];
+export const labelsData = [{ lat: 5.518690, lng: 5.737622, color: "white", size: 30, text: "You can find me here!" }];
 export const remoteWork = 'I work remotely from Nigeria. I am available for remote work opportunities, and I am always looking to collaborate with other developers and designers. If you have a project you would like to discuss or if you would like to learn more about my work, please feel free to reach out to me. I would love to hear from you!';
 export const bioText = 'I am Obiajulu Anthony, a Full Stack Developer and UI/UX Designer with over 4 years of experience in building responsive, high-performance web applications. My expertise spans across both frontend and backend development, with a strong proficiency in React, Next.js, TypeScript, Node.js, and MongoDB. I am passionate about creating intuitive user experiences and optimizing performance to deliver exceptional digital solutions. My skillset also includes working with the latest technologies like Bun, Remix, Shad CN, and Three.js. I thrive in collaborative environments, working closely with cross-functional teams to transform ideas into reality and drive business growth. Dedicated to continuous learning and innovation, I am always seeking new opportunities to expand my knowledge and contribute to impactful projects.';
 export const contactMe = 'I love collaborating on exciting projects! Whether you\'re a developer, designer, or just have a cool idea, let\'s connect and create something amazing together. Reach out to me anytime!';
@@ -364,4 +407,4 @@ export const socials = {
   email: 'official.de.ash@gmail.com',
   resumeURL: 'https://tr.ee/XKFysG99l0',
 }
-export const HakiAttribution = { text: 'Powered by HAKI', link: 'https://linktr.ee/HakiCorporation', logo: '/assets/haki.svg' };
+export const HakiAttribution = { text: 'Powered by', link: 'https://linktr.ee/HakiCorporation', logo: '/assets/HAKI-logo-svg.svg' };
