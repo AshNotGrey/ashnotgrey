@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { nameBrand, nameShort2, navLinks } from "../constants/index.js";
 import { useMediaQuery } from "react-responsive";
+import GoogleTranslateToggle from "../components/GoogletTranslate.jsx";
 
 const NavBar = () => {
   const [isOpen, setisOpen] = useState(false);
@@ -25,6 +26,9 @@ const NavBar = () => {
             )}
           </li>
         ))}
+        <li key='Translate' className='nav-li'>
+          <GoogleTranslateToggle />
+        </li>
       </ul>
     );
   };
@@ -57,7 +61,7 @@ const NavBar = () => {
           </nav>
         </div>
       </div>
-      <div className={`nav-sidebar ${isOpen ? "max-h-screen" : "max-h-0"}`}>
+      <div className={`nav-sidebar ${isOpen ? "max-h-screen h-screen" : "max-h-0"}`}>
         <nav className='p-5'>
           <NavItems />
         </nav>

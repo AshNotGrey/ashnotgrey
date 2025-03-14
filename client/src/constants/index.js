@@ -167,7 +167,7 @@ export const myProjects = [
     href: 'https://www.doginalduppets.com/',
     purchaseLink: false,
     texture: '/textures/project/Duppets.mp4',
-    logo: '/assets/Duppet.jpg',
+    logo: '/assets/Duppet.png',
     logoStyle: {
       backgroundColor: '#E8D5B4',
       border: '0.2px solid #6B4F1D',
@@ -254,7 +254,7 @@ export const myProjects = [
     href: 'https://ashnotgrey.vercel.app/',
     purchaseLink: false,
     texture: '/textures/project/3D-portfolio.mp4',
-    logo: '/assets/Sigil.svg',
+    logo: '/assets/Brand-logo-unframed-light.svg',
     logoStyle: {
       backgroundColor: '#000000',
       border: '0.2px solid #000000',
@@ -334,7 +334,7 @@ export const workExperiences = [
   },
   {
     id: 2,
-    name: 'Haki | Haki Labs',
+    name: 'Haki & Haki Labs',
     pos: 'Lead Full Stack Developer',
     duration: '2022 - Current Day',
     title: "Played a pivotal role in project lifecycles by devising innovative strategies, contributing 30% of the team's dynamic output.",

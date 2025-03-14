@@ -6,6 +6,7 @@ import Testimonials from "./sections/Testimonials";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 import Experience from "./sections/Experience";
+import "../serviceWorker.js";
 
 const App = () => {
   return (

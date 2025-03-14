@@ -7,16 +7,18 @@
     "background_color": "#010103",
     "theme_color": "#010103",
     "orientation": "portrait",
+    "scope": "/",
+    "lang": "en",
     "icons": [
         {
-            "src": "Favicons/Sigil.svg",
+            "src": "Favicons/Brand-logo-dark.png",
             "sizes": "192x192",
-            "type": "image/svg+xml"
+            "type": "image/png"
         },
         {
-            "src": "Favicons/Sigil.svg",
+            "src": "Favicons/Brand-logo-dark.png",
             "sizes": "512x512",
-            "type": "image/svg+xml"
+            "type": "image/png"
         }
     ],
     "screenshots": [
@@ -34,5 +36,6 @@
         }
     ],
     "related_applications": [ ],
+    "categories": [ "portfolio", "web development", "software engineering", "projects", "skills", "Obiajulu Anthony", "Obiajulu Anthony's Portfolio", "Fullstack development", "Frontend development", "Backend development", "Mobile development", "Web design", "UI/UX design", "Responsive design", "Progressive Web App", "PWA" ],
     "prefer_related_applications": false
 }
