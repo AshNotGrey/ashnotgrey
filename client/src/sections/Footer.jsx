@@ -1,4 +1,6 @@
+import { useRef } from "react";
 import { HakiAttribution, nameBrand, socials } from "../constants";
+import { useSlideUpFadeIn } from "../gsap";
 
 const Footer = () => {
   const socialIcons = [
@@ -8,9 +10,12 @@ const Footer = () => {
     { name: "LinkedIn", icon: "linkedin.svg" },
     { name: "Linktree", icon: "linktree.svg" },
   ];
-
+  const myRef = useRef(null);
+  useSlideUpFadeIn(myRef, { duration: 1, y: 20, start: "top bottom" });
   return (
-    <section className='c-space pt-7 pb-3 border-t border-black-300 flex flex-col md:flex-wrap md:flex-row-reverse lg:justify-between justify-center items-center gap-5'>
+    <section
+      className='c-space pt-7 pb-3 border-t border-black-300 flex flex-col md:flex-wrap md:flex-row-reverse lg:justify-between justify-center items-center gap-5'
+      ref={myRef}>
       <div className='flex gap-3'>
         {socialIcons.map(({ name, icon }) => (
           <a key={name} target='_blank' rel='noreferrer' href={socials[name]} title={name}>

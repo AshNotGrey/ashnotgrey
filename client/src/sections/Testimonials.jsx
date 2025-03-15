@@ -1,4 +1,6 @@
+import { useRef } from "react";
 import { clientReviews } from "../constants";
+import { useStaggeredScrollAnimation } from "../gsap";
 
 /**
  * The Testimonials component renders a section of the webpage containing
@@ -7,12 +9,20 @@ import { clientReviews } from "../constants";
  * displayed as a series of stars.
  */
 const Testimonials = () => {
+  const containerRef = useRef(null);
+  useStaggeredScrollAnimation(containerRef, ".testimony", {
+    duration: 1,
+    opacity: 0,
+    delay: 0.5,
+    y: 20,
+    stagger: 0.2,
+  });
   return (
     <section className='c-space my-20' id='testimonial'>
       <h3 className='head-text'>Hear from my clients</h3>
-      <div className='client-container'>
+      <div className='client-container' ref={containerRef}>
         {clientReviews.map(({ id, name, review, img, position }) => (
-          <div className='client-review' key={id}>
+          <div className='client-review testimony' key={id}>
             <div>
               <p className='text-white font-light'>{review}</p>
               <div className='client-content'>

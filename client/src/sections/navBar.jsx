@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { nameBrand, nameShort2, navLinks } from "../constants/index.js";
 import { useMediaQuery } from "react-responsive";
 import GoogleTranslateToggle from "../components/GoogletTranslate.jsx";
+import { useSlideDownFadeIn } from "../gsap.js";
 
 const NavBar = () => {
   const [isOpen, setisOpen] = useState(false);
@@ -9,6 +10,8 @@ const NavBar = () => {
     setisOpen((prev) => !prev);
   };
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+  const navRef = useRef(null);
+  useSlideDownFadeIn(navRef, { duration: 2, y: -20 });
   const NavItems = () => {
     return (
       <ul className='nav-ul'>
@@ -33,7 +36,7 @@ const NavBar = () => {
     );
   };
   return (
-    <header className='text-white fixed top-0 left-0 right-0 z-50 bg-black/90'>
+    <header className='text-white fixed top-0 left-0 right-0 z-50 bg-black/90' ref={navRef}>
       <div className='max-w-7xl mx-auto'>
         <div className='flex justify-between items-center py-5 mx-auto c-space'>
           {/* 

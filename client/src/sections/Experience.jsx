@@ -1,12 +1,20 @@
 import { Canvas } from "@react-three/fiber";
 import CanvasLoader from "../components/CanvasLoader";
-import { Suspense, useState } from "react";
+import { Suspense, useRef, useState } from "react";
 import { workExperiences } from "../constants";
 import { OrbitControls } from "@react-three/drei";
 import Developer from "../components/Developer";
+import { useSlideUpFadeIn } from "../gsap";
 // todo add button for viewing resume and downloading it
 const Experience = () => {
   const [animation, setanimation] = useState("idle");
+  const myRef = useRef(null);
+  useSlideUpFadeIn(myRef, {
+    duration: 1,
+    y: 20,
+    start: "top bottom",
+    toggleActions: "play none none reverse",
+  });
   return (
     <section className='c-space my-20'>
       <div className='w-full text-white-600'>
@@ -30,7 +38,7 @@ const Experience = () => {
             </Canvas>
           </div>
           <div className='work-content'>
-            <div className='sm:py-10 py-5 sm:px-5 px-2.5'>
+            <div className='sm:py-10 py-5 sm:px-5 px-2.5' ref={myRef}>
               {workExperiences.map(({ id, name, pos, duration, title, icon, animation }) => (
                 <div
                   className='work-content_container group'

@@ -9,7 +9,8 @@ import {
 } from "../constants";
 import Globe from "react-globe.gl";
 import Button from "../components/Button";
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { useStaggeredScrollAnimation } from "../gsap";
 /**
  * The About component is a section of the webpage that provides information about the user.
  * It includes a grid layout with different sections such as a brief introduction, tech stack,
@@ -27,10 +28,20 @@ const About = () => {
       sethasCopied(false);
     }, 5000);
   };
+  const containerRef = useRef(null);
+  useStaggeredScrollAnimation(containerRef, ".item-stagger", {
+    duration: 1,
+    opacity: 0,
+    delay: 0.5,
+    y: 20,
+    stagger: 0.2,
+  });
   return (
     <section className='c-space my-20' id='about'>
-      <div className='grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full'>
-        <div className='col-span-1 xl:row-span-3'>
+      <div
+        className='grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full'
+        ref={containerRef}>
+        <div className='col-span-1 xl:row-span-3 item-stagger'>
           <div className='grid-container'>
             {/* Maybe chnage to something u prefer */}
             <img
@@ -44,7 +55,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className='col-span-1 xl:row-span-3'>
+        <div className='col-span-1 xl:row-span-3 item-stagger'>
           <div className='grid-container'>
             {/* Definitely change to something without JSM logo  but similar*/}
             <img
@@ -58,7 +69,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className='col-span-1 xl:row-span-4'>
+        <div className='col-span-1 xl:row-span-4 item-stagger'>
           <div className='grid-container'>
             <div className='rounded-3xl w-full sm:h-[326px] h-fit justify-center items-center'>
               {/* Change labels data to something u prefer */}
@@ -84,7 +95,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className='xl:col-span-2 xl:row-span-3'>
+        <div className='xl:col-span-2 xl:row-span-3 item-stagger'>
           <div className='grid-container'>
             <img
               src='/assets/grid3.png'
@@ -98,7 +109,7 @@ const About = () => {
           </div>
         </div>
         {/* Maybe add linktree */}
-        <div className='xl:col-span xl:row-span-2'>
+        <div className='xl:col-span xl:row-span-2 item-stagger'>
           <div className='grid-container'>
             <img
               src='/assets/grid4.png'

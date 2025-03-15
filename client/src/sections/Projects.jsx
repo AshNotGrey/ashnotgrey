@@ -1,10 +1,11 @@
-import { Suspense, useState } from "react";
+import { Suspense, useRef, useState } from "react";
 import { myProjects } from "../constants";
 import { Canvas } from "@react-three/fiber";
 import { Center, OrbitControls } from "@react-three/drei";
 import CanvasLoader from "../components/CanvasLoader";
 // import DemoComputer from "../components/DemoComputer";
 import ProjectsMonitor from "../components/ProjectMonitor";
+import { useStaggeredScrollAnimation } from "../gsap";
 
 const projectsCount = myProjects.length;
 
@@ -30,11 +31,19 @@ const Projects = () => {
       }
     });
   };
+  const containerRef = useRef(null);
+  useStaggeredScrollAnimation(containerRef, ".stagger", {
+    duration: 0.5,
+    opacity: 0,
+    delay: 0.5,
+    y: 20,
+    stagger: 0.2,
+  });
   return (
     <section className='c-space my-20' id='work'>
       <p className='head-text capitalize'>My work</p>
-      <div className='grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full'>
-        <div className='flex flex-col gap-5 relative sm:p-10 py-10 px-5 shadow-2xl shadow-black-200'>
+      <div className='grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full' ref={containerRef}>
+        <div className='flex flex-col gap-5 relative sm:p-10 py-10 px-5 shadow-2xl shadow-black-200 stagger'>
           <div className='absolute top-0 right-0'>
             <img
               src={currentProject.spotlight}
@@ -95,7 +104,7 @@ const Projects = () => {
             </button>
           </div>
         </div>
-        <div className='border border-black-300 bg-black-200 rounded-lg h-96 md:h-full'>
+        <div className='border border-black-300 bg-black-200 rounded-lg h-96 md:h-full stagger'>
           <Canvas>
             <ambientLight intensity={Math.PI} />
             <directionalLight position={[5, 5, 20]} intensity={10} />

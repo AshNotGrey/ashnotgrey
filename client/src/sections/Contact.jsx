@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import { contactMe } from "../constants";
 import emailjs from "@emailjs/browser";
+import { useStaggeredScrollAnimation } from "../gsap";
 
 /**
  * Contact component for the portfolio.
@@ -48,7 +49,14 @@ const Contact = () => {
       setLoading(false);
     }
   };
-
+  const containerRef = useRef(null);
+  useStaggeredScrollAnimation(containerRef, ".contact", {
+    duration: 0.5,
+    opacity: 0,
+    delay: 0.5,
+    y: 20,
+    stagger: 0.2,
+  });
   return (
     <section className='c-space' id='contact'>
       <div className='relative min-h-screen flex flex-col justify-center items-center'>
@@ -58,11 +66,11 @@ const Contact = () => {
           className='absolute inset-o min-h-screen hidden md:flex'
         />
         {/* Consider changing the text below to look like a console only on md and above */}
-        <div className='contact-container'>
+        <div className='contact-container' ref={containerRef}>
           <h3 className='head-text'>Lets talk</h3>
           <p className='text-lg text-white-600 mt-3'>{contactMe}</p>
           <form ref={formRef} onSubmit={handleSubmit} className='mt-12 flex flex-col space-y-7'>
-            <label htmlFor='name' className='space-y-3'>
+            <label htmlFor='name' className='space-y-3 contact'>
               <span className='field-label'>Full Name</span>
               <input
                 type='text'
@@ -75,7 +83,7 @@ const Contact = () => {
                 placeholder='Hashirama Senju'
               />
             </label>
-            <label htmlFor='email' className='space-y-3'>
+            <label htmlFor='email' className='space-y-3 contact'>
               <span className='field-label'>Email</span>
               <input
                 type='email'
@@ -88,7 +96,7 @@ const Contact = () => {
                 placeholder='hashiramasenju@gmail.com'
               />
             </label>
-            <label htmlFor='message' className='space-y-3'>
+            <label htmlFor='message' className='space-y-3 contact'>
               <span className='field-label'>Your message</span>
               <textarea
                 name='message'
@@ -101,7 +109,7 @@ const Contact = () => {
                 placeholder="Hi, I'm interested in..."
               />
             </label>
-            <button type='submit' className='field-btn' disabled={loading}>
+            <button type='submit' className='field-btn contact' disabled={loading}>
               {loading ? "Sending..." : "Send Message"}
               <img src='/assets/arrow-up.png' alt='arrow-up' className='field-btn_arrow' />
             </button>
