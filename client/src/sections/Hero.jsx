@@ -53,7 +53,7 @@ const Hero = () => {
     <section className='min-h-screen w-full flex flex-col relative' id='home'>
       <div className='w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3' ref={containerRef}>
         <p
-          className='sm:text-3xl text-2xl font-medium text-white text-center font-generalsans'
+          className='sm:text-3xl text-2xl font-medium text-white text-center font-poiret'
           ref={myRef}>
           {/* Look for a line art or hand glyph */}
           Hi, I am {alias} !<span className='waving-hand'>👋🏽</span>

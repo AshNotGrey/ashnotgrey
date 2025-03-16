@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         generalsans: ['General Sans', 'sans-serif'],
+        poiret: ['PoiretOne-Regular', 'AlumniSansPinstripe-Regular', 'General Sans', 'sans-serif'],
       },
       colors: {
         black: {

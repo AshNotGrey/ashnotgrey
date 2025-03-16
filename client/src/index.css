@@ -1,5 +1,29 @@
 @import url('https://fonts.cdnfonts.com/css/general-sans');
 
+@font-face
+{
+  font-family: 'nagasaki';
+  src: url('/fonts/nagasaki.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face
+{
+  font-family: 'AlumniSansPinstripe-Regular';
+  src: url('/fonts/AlumniSansPinstripe-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face
+{
+  font-family: 'PoiretOne-Regular';
+  src: url('/fonts/PoiretOne-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,10 +38,13 @@
   box-sizing: border-box;
 }
 
-body
+
+@layer base
 {
-  background: #010103;
-  font-family: 'General Sans', sans-serif;
+  body
+  {
+    @apply font-poiret bg-[#010103];
+  }
 }
 
 @layer utilities
@@ -39,7 +66,7 @@ body
 
   .nav-li
   {
-    @apply text-neutral-400 hover:text-white font-generalsans max-sm:hover:bg-black-500 max-sm:w-full max-sm:rounded-md py-2 max-sm:px-5;
+    @apply text-neutral-400 hover:text-white font-poiret max-sm:hover:bg-black-500 max-sm:w-full max-sm:rounded-md py-2 max-sm:px-5;
   }
 
   .nav-li_a
@@ -87,12 +114,12 @@ body
 
   .grid-headtext
   {
-    @apply text-xl font-semibold mb-2 text-white font-generalsans;
+    @apply text-xl font-semibold mb-2 text-white;
   }
 
   .grid-subtext
   {
-    @apply text-[#afb0b6] text-base font-generalsans;
+    @apply text-[#afb0b6] text-base;
   }
 
   .copy-container
