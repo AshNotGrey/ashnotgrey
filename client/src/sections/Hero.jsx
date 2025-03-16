@@ -1,5 +1,4 @@
 import { Suspense, useState, useEffect, useRef } from "react";
-import HackerRoom from "../components/HackerRoom";
 import { alias, calculateSizes, heroTag } from "../constants";
 import { Canvas } from "@react-three/fiber";
 import CanvasLoader from "../components/CanvasLoader";
@@ -11,6 +10,7 @@ import Cube from "../components/Cube";
 import HeroCamera from "../components/HeroCamera";
 import Button from "../components/Button";
 import { useSlideUpFadeIn, useTypewriterAnimation } from "../gsap";
+import Hologram from "../components/HologramComputer";
 /**
  * The Hero component is the main section of the homepage. It contains the name switch animation,
  * the tag switch animation, and the 3D scene.
@@ -67,17 +67,13 @@ const Hero = () => {
             {/* The perspectiveCamera is from @react-three/fiber */}
             {/* The `makeDefault` prop makes the camera the default camera */}
             {/* The `position` prop sets the position of the camera */}
-            {/* The `HackerRoom` component is a 3D scene */}
+            {/* The `Hologram` component is a 3D scene */}
             <Suspense fallback={<CanvasLoader />}>
               <perspectiveCamera makeDefault position={[0, 0, 20]} />
               <ambientLight intensity={3} />
               <directionalLight intensity={0.5} position={[10, 10, 10]} />
               <HeroCamera isMobile={isMobile}>
-                <HackerRoom
-                  scale={sizes.deskScale}
-                  rotation={sizes.deskRotation}
-                  position={sizes.deskPosition}
-                />
+                <Hologram scale={1.5} rotation={sizes.deskRotation} position={sizes.deskPosition} />
               </HeroCamera>
               <group>
                 <Target position={sizes.targetPosition} />

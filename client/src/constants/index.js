@@ -308,7 +308,7 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
   return {
     deskRotation: [0.15, Math.PI, 0],
     deskScale: isSmall ? 0.018 : isMobile ? 0.02 : 0.025,
-    deskPosition: isSmall ? [0.2, -2.2, -0.8] : isMobile ? [0.2, -2.2, -0.6] : [0.1, -1.6, -0.3],
+    deskPosition: isSmall ? [0.2, -1, -1] : isMobile ? [0.2, -1, -1] : [0.1, -0.7, -0.3],
     cubePosition: isSmall ? [1, -1, 1] : isMobile ? [2, -1, 1] : isTablet ? [3, -1, 1] : [3, -1, 1],
     reactLogoPosition: isSmall ? [3, 4, 0] : isMobile ? [5, 4, 0] : isTablet ? [5, 4, 0] : [12, 3, 0],
     xboxPosition: isSmall ? [2, 1, 0] : isMobile ? [2, 1, 0] : isTablet ? [3, 1, 0] : [9, 1, 0],
