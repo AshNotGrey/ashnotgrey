@@ -3,8 +3,8 @@ import { myProjects } from "../constants";
 import { Canvas } from "@react-three/fiber";
 import { Center, OrbitControls } from "@react-three/drei";
 import CanvasLoader from "../components/CanvasLoader";
-import ProjectsMonitor from "../components/ProjectMonitor";
 import { useStaggeredScrollAnimation } from "../gsap";
+import ProjectMonitor from "../components/ProjectMonitor";
 
 const projectsCount = myProjects.length;
 
@@ -109,8 +109,8 @@ const Projects = () => {
             <directionalLight position={[5, 5, 20]} intensity={10} />
             <Center>
               <Suspense fallback={<CanvasLoader />}>
-                <group position={[0, 4, 0]} rotation={[0.1, -3, 0]} scale={1.75}>
-                  <ProjectsMonitor texture={currentProject.texture} flipY={currentProject.flip} />
+                <group position={[0, 3, 1]} rotation={[-1.35, 0, -0.25]} scale={1.75}>
+                  <ProjectMonitor texture={currentProject.texture} flipY={currentProject.flip} />
                 </group>
               </Suspense>
             </Center>

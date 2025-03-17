@@ -6,20 +6,21 @@ Source: https://sketchfab.com/3d-models/sci-fi-monitor-37a0fbbf74cd41bdb91c37156
 Title: Sci fi Monitor
 */
 
+// import React, { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import { useGLTF, useVideoTexture } from "@react-three/drei";
 import gsap from "gsap";
 import PropTypes from "prop-types";
 import { useEffect, useRef } from "react";
 
-const ProjectsMonitor = (props) => {
-  const { nodes, materials } = useGLTF("/models/Projects monitor.glb");
+function ProjectMonitor(props) {
+  const { nodes, materials } = useGLTF("/models/Projects-monitor-c.glb");
   const texture = useVideoTexture(props.texture || "/textures/project/Iphone 15 pro.mp4");
   const group = useRef();
   useGSAP(() => {
     gsap.from(group.current.rotation, {
       duration: 1,
-      y: Math.PI / 2,
+      z: Math.PI / 2,
       ease: "power3.out",
     });
   }, [texture]);
@@ -36,88 +37,59 @@ const ProjectsMonitor = (props) => {
           receiveShadow
           geometry={nodes.Object_4.geometry}
           material={materials["Material.005"]}
+          rotation={[Math.PI / 2, 0, 0]}
         />
         <mesh
           castShadow
           receiveShadow
           geometry={nodes.Object_5.geometry}
           material={materials["Material.010"]}
+          rotation={[Math.PI / 2, 0, 0]}
         />
         <mesh
           castShadow
           receiveShadow
           geometry={nodes.Object_6.geometry}
           material={materials["Material.012"]}
+          rotation={[Math.PI / 2, 0, 0]}
         />
         <mesh
           castShadow
           receiveShadow
           geometry={nodes.Object_7.geometry}
           material={materials.None}
+          rotation={[Math.PI / 2, 0, 0]}
         />
         <mesh
           castShadow
           receiveShadow
           geometry={nodes.Object_8.geometry}
           material={materials["Material.011"]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Object_9.geometry}
-          material={materials["Material.018"]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Object_10.geometry}
-          material={materials["Material.019"]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Object_11.geometry}
-          material={materials["Material.014"]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Object_12.geometry}
-          material={materials["Material.013"]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Object_13.geometry}
-          material={materials["Material.015"]}
+          rotation={[Math.PI / 2, 0, 0]}
         />
         <mesh
           castShadow
           receiveShadow
           geometry={nodes.Object_14.geometry}
           material={materials["Material.016"]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Object_15.geometry}
-          material={materials["Material.017"]}
+          rotation={[Math.PI / 2, 0, 0]}
         />
         <mesh
           castShadow
           receiveShadow
           geometry={nodes.Object_16.geometry}
-          material={materials["Material.002"]}>
+          material={materials["Material.002"]}
+          rotation={[Math.PI / 2, 0, 0]}>
           <meshBasicMaterial map={texture} />
         </mesh>
       </group>
     </group>
   );
-};
+}
 
-useGLTF.preload("/models/Projects monitor.glb");
-ProjectsMonitor.propTypes = {
+useGLTF.preload("/models/Projects-monitor-c.glb");
+ProjectMonitor.propTypes = {
   texture: PropTypes.string,
   flipY: PropTypes.bool,
 };
-export default ProjectsMonitor;
+export default ProjectMonitor;

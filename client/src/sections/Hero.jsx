@@ -3,14 +3,14 @@ import { alias, calculateSizes, heroTag } from "../constants";
 import { Canvas } from "@react-three/fiber";
 import CanvasLoader from "../components/CanvasLoader";
 import { useMediaQuery } from "react-responsive";
-import Target from "../components/Target";
-import ReactLogo from "../components/ReactLogo";
 import Rings from "../components/Ring";
-import Cube from "../components/Cube";
 import HeroCamera from "../components/HeroCamera";
 import Button from "../components/Button";
 import { useSlideUpFadeIn, useTypewriterAnimation } from "../gsap";
 import Hologram from "../components/HologramComputer";
+import Headphones from "../components/Headphone";
+import Drone from "../components/Drone";
+import Iphone from "../components/Iphone";
 /**
  * The Hero component is the main section of the homepage. It contains the name switch animation,
  * the tag switch animation, and the 3D scene.
@@ -19,7 +19,7 @@ import Hologram from "../components/HologramComputer";
 const Hero = () => {
   const isSmall = useMediaQuery({ query: "(max-width: 440px)" });
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
-  const isTablet = useMediaQuery({ query: "(max-width: 1024px, min-width: 769px)" });
+  const isTablet = useMediaQuery({ query: "(max-width: 1024px)" });
   const sizes = calculateSizes(isSmall, isMobile, isTablet);
   // Call the hook with a selector and scroll trigger config.
   const containerRef = useTypewriterAnimation({
@@ -76,10 +76,10 @@ const Hero = () => {
                 <Hologram scale={1.5} rotation={sizes.deskRotation} position={sizes.deskPosition} />
               </HeroCamera>
               <group>
-                <Target position={sizes.targetPosition} />
-                <ReactLogo position={sizes.reactLogoPosition} />
-                <Rings position={sizes.ringPosition} />
-                <Cube position={sizes.cubePosition} />
+                {!isMobile && <Drone position={sizes.dronePosition} />}
+                {!isMobile && <Headphones position={sizes.headphonePosition} />}
+                {!isMobile && <Iphone position={sizes.IphonePosition} scale={0.05} />}
+                {!isMobile && <Rings position={sizes.ringPosition} />}
               </group>
             </Suspense>
           </Canvas>

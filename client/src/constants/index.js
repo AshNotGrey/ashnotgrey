@@ -309,12 +309,10 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
     deskRotation: [0.15, Math.PI, 0],
     deskScale: isSmall ? 0.018 : isMobile ? 0.02 : 0.025,
     deskPosition: isSmall ? [0.2, -1, -1] : isMobile ? [0.2, -1, -1] : [0.1, -0.7, -0.3],
-    cubePosition: isSmall ? [1, -1, 1] : isMobile ? [2, -1, 1] : isTablet ? [3, -1, 1] : [3, -1, 1],
-    reactLogoPosition: isSmall ? [3, 4, 0] : isMobile ? [5, 4, 0] : isTablet ? [5, 4, 0] : [12, 3, 0],
-    xboxPosition: isSmall ? [2, 1, 0] : isMobile ? [2, 1, 0] : isTablet ? [3, 1, 0] : [9, 1, 0],
     ringPosition: isSmall ? [-18, 9, 0] : isMobile ? [-18, 9, 0] : isTablet ? [-18, 9, 0] : [-18, 9, 0],
-    targetPosition: isSmall ? [-3, -4, -5] : isMobile ? [-4, -4, -5] : isTablet ? [-1, -4, -5] : [-6, -4, -5],
-    dronePosition: isSmall ? [-3, -4, -5] : isMobile ? [-4, -4, -5] : isTablet ? [-1, -4, -5] : [-6, -4, -5],
+    headphonePosition: isSmall ? [0, 0, 0] : isMobile ? [0, 0, 0] : isTablet ? [-2.85, 3, -2] : [-5, -2, -2],
+    dronePosition: isSmall ? [3, 4, 0] : isMobile ? [5, 4, 0] : isTablet ? [3, 2.5, -2] : [4, 1, 0],
+    IphonePosition: isSmall ? [3, 4, 0] : isMobile ? [5, 4, 0] : isTablet ? [3, 2.5, -2] : [3, -2, 0],
   };
 };
 

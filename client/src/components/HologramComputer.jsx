@@ -32,5 +32,3 @@ const Hologram = (props) => {
 
 useGLTF.preload("/models/Holo.glb");
 export default Hologram;
-// const screenTxt = useTexture("textures/desk/screen.png");
-//         <meshMatcapMaterial map={monitortxt} />;
