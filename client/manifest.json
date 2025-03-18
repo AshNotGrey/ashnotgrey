@@ -1,38 +1,41 @@
 {
     "name": "Obiajulu Anthony's Portfolio",
     "short_name": "Portfolio",
-    "description": "Obiajulu Anthony's Portfolio showcasing projects and skills in software engineering and web development.",
+    "description": "Showcasing projects and skills in software engineering and web development.",
     "start_url": "/",
+    "scope": "/",
     "display": "standalone",
     "background_color": "#010103",
     "theme_color": "#010103",
     "orientation": "portrait",
-    "scope": "/",
-    "lang": "en",
     "icons": [
         {
-            "src": "Favicons/Brand-logo-dark.png",
+            "src": "/assets/Favicons/Brand-logo-dark-192.png",
             "sizes": "192x192",
-            "type": "image/png"
+            "type": "image/png",
+            "purpose": "any"
         },
         {
-            "src": "Favicons/Brand-logo-dark.png",
+            "src": "/assets/Favicons/Brand-logo-dark-512.png",
             "sizes": "512x512",
-            "type": "image/png"
+            "type": "image/png",
+            "purpose": "any maskable"
         }
     ],
     "screenshots": [
         {
-            "src": "screenshots/screenshot1.png",
+            "src": "/assets/screenshot1.png",
             "sizes": "1280x720",
             "type": "image/png",
-            "description": "Homepage of Obiajulu Anthony's Portfolio"
+            "description": "Homepage screenshot",
+            "form_factor": "wide"
         },
         {
-            "src": "screenshots/screenshot2.png",
+            "src": "/assets/screenshot2.png",
             "sizes": "1280x720",
             "type": "image/png",
-            "description": "Projects section of Obiajulu Anthony's Portfolio"
+            "description": "Projects screenshot",
+            "form_factor": "wide"
         }
     ],
     "related_applications": [ ],
