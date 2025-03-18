@@ -109,7 +109,7 @@ const Projects = () => {
             <directionalLight position={[5, 5, 20]} intensity={10} />
             <Center>
               <Suspense fallback={<CanvasLoader />}>
-                <group position={[0, 3, 1]} rotation={[-1.35, 0, -0.25]} scale={1.75}>
+                <group position={[0, 4, 0.5]} rotation={[-1.35, 0, -3]} scale={1.75}>
                   <ProjectMonitor texture={currentProject.texture} flipY={currentProject.flip} />
                 </group>
               </Suspense>
