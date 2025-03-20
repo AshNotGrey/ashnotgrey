@@ -14,7 +14,7 @@ const Footer = () => {
   useSlideUpFadeIn(myRef, { duration: 1, y: 20, start: "top bottom" });
   return (
     <section
-      className='c-space pt-7 pb-3 border-t border-black-300 flex flex-col md:flex-wrap md:flex-row-reverse lg:justify-between justify-center items-center gap-5'
+      className='c-space mt-5 pt-7 pb-3 border-t border-black-300 flex flex-col md:flex-wrap md:flex-row-reverse lg:justify-between justify-center items-center gap-5'
       ref={myRef}>
       <div className='flex gap-3'>
         {socialIcons.map(({ name, icon }) => (
