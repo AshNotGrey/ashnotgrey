@@ -69,13 +69,36 @@ export const clientReviews = [
   },
 ];
 
-// todo replace with yours
 /**
  * Projects to be displayed in the portfolio.
  * @type {Array<{title: string, desc: string, subdesc: string, href: string, texture: string, logo: string, logoStyle: object, spotlight: string, tags: Array<{id: number, name: string, path: stringflip: false,
  * }>}>}
  */
 export const myProjects = [
+  {
+    title: 'iHealth and Wellness Foundation, Inc',
+    desc: "iHealth and Wellness Foundation, Inc. is a New York based nonprofit launched in May 2023 that’s all about improving the lives of people dealing with complex diseases—especially conditions like Neurofibromatosis Type 1 (NF1). They’re building a digital platform that connects patients with specialized providers, offers medical and wellness networking, and includes personalized advocacy support. A big part of their mission is integrating with electronic health records (EHRs) to ensure provider data stays current and accurate.",
+
+    subdesc: "At iHealth and Wellness Foundation Inc, we believe that managing complex conditions should be simpler for everyone.",
+    href: 'https://www.ihealthwellness.org/',
+    purchaseLink: false,
+    texture: 'textures/project/IHealth.mp4',
+    logo: '/assets/iHEALTH-logo.png',
+    logoStyle: {
+      backgroundColor: '#FFFFFF',
+      border: '0.2px solid #000000',
+      boxShadow: '0px 0px 60px 0px #FFFFFF',
+    },
+    spotlight: '/assets/White-Iphone.png',
+    flip: false,
+    tags: [
+      {
+        id: 1,
+        name: 'Figma',
+        path: '/assets/figma.svg',
+      },
+    ],
+  },
   {
     title: 'Iphone 15 pro (Haki Edition)',
     desc: "Leveraging the latest technologies, the iPhone 15 Pro landing page showcases the device's cutting-edge features and design elements. The Haki Edition adds a touch of luxury and exclusivity, setting it apart from other devices on the market.",
@@ -130,7 +153,7 @@ export const myProjects = [
     desc: "CHUCK is a dog-themed meme coin celebrating the bond between iconic figures and their dogs. Stealth-launched for decentralization, it’s a deflationary token with burn campaigns, exclusive community perks, and access to NFTs, games, and a market insights bot.",
 
     subdesc: "Built on Base, CHUCK leverages smart contracts for automated burns, community rewards, and secure transactions. It integrates Telegram bots for market data and supports NFT utilities within its ecosystem.",
-    href: 'https://chuck-testing.vercel.app/',
+    href: 'https://chuck-pi.vercel.app/',
     purchaseLink: false,
     texture: '/textures/project/Chuck.mp4',
     logo: '/assets/Chuck.png',
@@ -164,7 +187,7 @@ export const myProjects = [
     desc: "Doginal Duppets is an innovative project within the Dogecoin ecosystem, blending the charm of handcrafted puppets with the security and permanence of blockchain technology. Inspired by the esoteric and absurd, our collection of puppets is unlike anything you've ever seen before. Each duppet is meticulously created with basic tools, loads of effort, and boundless passion.",
 
     subdesc: "Built to match the clients exact description and requirements,playing a major role in the marketing of the NFT collection, featured on their main X (then Twitter) page.",
-    href: 'https://www.doginalduppets.com/',
+    href: 'https://x.com/DoginalDuppets',
     purchaseLink: false,
     texture: '/textures/project/Duppets.mp4',
     logo: '/assets/Duppet.png',
@@ -294,7 +317,46 @@ export const myProjects = [
         path: 'assets/tailwindcss.png',
       },
     ],
-  }
+  },
+  // {
+  //   title: 'PDFHOUSE',
+  //   desc: "This a the begining of a project that aims to provide a comprehensive platform for managing and sharing PDF documents amongst university students. The platform will allow users to upload, download, and share PDF documents, as well as create and manage their own personal libraries. Its aimed at easing the process of sharing and accessing academic resources, making it easier for students to collaborate and succeed in their studies.",
+
+  //   subdesc: "The project is currently in its early stages and currently more relevant to students of Federal University of Petroleum Resources, with plans to implement features such as user authentication, document categorization, search functionality and extend to other universities. The goal is to create a user-friendly interface that allows students to easily navigate and manage their PDF documents.",
+  //   href: 'https://pdfhouse.vercel.app/',
+  //   purchaseLink: false,
+  //   texture: '', // todo add texture
+  //   logo: '/assets/PDFHOUSE.png',
+  //   logoStyle: {
+  //     backgroundColor: '#000000',
+  //     border: '0.2px solid #000000',
+  //     boxShadow: '0px 0px 60px 0px #FFFFFF',
+  //   },
+  //   spotlight: '/assets/White-Iphone.png',
+  //   flip: false,
+  //   tags: [
+  //     {
+  //       id: 1,
+  //       name: 'Figma',
+  //       path: '/assets/figma.svg',
+  //     },
+  //     {
+  //       id: 2,
+  //       name: 'React.js',
+  //       path: '/assets/react.svg',
+  //     },
+  //     {
+  //       id: 3,
+  //       name: 'Gsap',
+  //       path: '/assets/Gsap.svg',
+  //     },
+  //     {
+  //       id: 4,
+  //       name: 'TailwindCSS',
+  //       path: 'assets/tailwindcss.png',
+  //     },
+  //   ],
+  // },
 ];
 
 /**
@@ -332,15 +394,6 @@ export const workExperiences = [
   },
   {
     id: 2,
-    name: 'Haki & Haki Labs',
-    pos: 'Lead Full Stack Developer',
-    duration: '2022 - Current Day',
-    title: "Played a pivotal role in project lifecycles by devising innovative strategies, contributing 30% of the team's dynamic output.",
-    icon: '/assets/HAKI-logo-svg.svg',
-    animation: 'victory',
-  },
-  {
-    id: 3,
     name: 'Doginal Duppets',
     pos: 'Frontend Developer',
     duration: '2024 - Contract Based',
@@ -349,13 +402,31 @@ export const workExperiences = [
     animation: 'clapping',
   },
   {
-    id: 4,
+    id: 3,
     name: 'Chuck',
     pos: 'Frontend Developer',
     duration: '2024 - Contract Based',
     title: "Developed the project in less than 24 man-hours and identified a key compatibility skew in the Uniswap widget API, ensuring a timely launch.",
     icon: '/assets/Chuck.png',
     animation: 'salute',
+  },
+  {
+    id: 4,
+    name: 'Haki & Haki Labs',
+    pos: 'Lead Full Stack Developer',
+    duration: '2022 - Current Day',
+    title: "Played a pivotal role in project lifecycles by devising innovative strategies, contributing 30% of the team's dynamic output.",
+    icon: '/assets/HAKI-logo-svg.svg',
+    animation: 'victory',
+  },
+  {
+    id: 5,
+    name: 'iHealth and Wellness Foundation, Inc',
+    pos: 'Backend Developer',
+    duration: '2025 - Current Day',
+    title: "Spearheaded the online store project, making sure it converts whilst maintaining organisational values and ethics.",
+    icon: '/assets/iHEALTH-logo.png',
+    animation: 'clapping',
   },
 ];
 
@@ -372,8 +443,10 @@ export const heroTag = [
   'Designing user-centric experiences',
   'A Frontend Developer',
   'A Problem Solver',
+  'Web3 Artist',
   'I am HIM',
   'A Brand Developer',
+  'Odogwu Pararan',
   'Empowering digital transformation',
   'An Innovator',
   'Crafting responsive websites',
@@ -389,7 +462,10 @@ export const heroTag = [
   'A UI/UX Designer',
   'Building the future of tech',
   'An Entreprenuer',
-  'A Freelancer'
+  'A Freelancer',
+  'A Digital Creator',
+  'A Tech Visionary',
+  'The Prompter'
 ];
 export const gridSubIntro = 'Full Stack Developer & UI/UX Designer with 4+ years of experience in building responsive web applications. Skilled in React, Next.js, TypeScript, Node.js, and MongoDB. Passionate about creating intuitive user experiences and optimizing performance.';
 export const techStack = 'I specialize in the MERN stack (MongoDB, Express, React, Node.js). I build dynamic web applications and websites, always expanding my skillset. Passionate about creating innovative solutions and dedicated to delivering high-quality work that exceeds client expectations.';
