@@ -33,7 +33,7 @@ const Experience = () => {
               <directionalLight intensity={3} position={[10, 10, 10]} />
               <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} />
               <Suspense fallback={CanvasLoader}>
-                <Developer position-y={-3} scale={3} animationName={animation} />
+                <Developer position-y={-3} scale={2.5} animationName={animation} />
               </Suspense>
             </Canvas>
           </div>
