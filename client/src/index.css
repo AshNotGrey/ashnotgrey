@@ -182,7 +182,7 @@
 
   .work-content_logo
   {
-    @apply rounded-3xl w-16 h-16 p-2 bg-black-600;
+    @apply rounded-3xl w-16 h-16 p-2 bg-transparent;
   }
 
   .work-content_bar

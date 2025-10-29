@@ -46,7 +46,7 @@ const NavBar = () => {
           <a
             href='/'
             className='text-neutral-400 text-2xl hover:text-white transition-colors delay-200 duration-1000 ease-in-out space-x-2 uppercase font-poiret'>
-            <span className='text-4xl'>♞</span>
+            <span className='text-4xl hidden md:inline'>♞</span>
             {isMobile ? nameShort2 : nameBrand}
           </a>
           <button

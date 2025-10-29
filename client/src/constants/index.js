@@ -318,45 +318,6 @@ export const myProjects = [
       },
     ],
   },
-  // {
-  //   title: 'PDFHOUSE',
-  //   desc: "This a the begining of a project that aims to provide a comprehensive platform for managing and sharing PDF documents amongst university students. The platform will allow users to upload, download, and share PDF documents, as well as create and manage their own personal libraries. Its aimed at easing the process of sharing and accessing academic resources, making it easier for students to collaborate and succeed in their studies.",
-
-  //   subdesc: "The project is currently in its early stages and currently more relevant to students of Federal University of Petroleum Resources, with plans to implement features such as user authentication, document categorization, search functionality and extend to other universities. The goal is to create a user-friendly interface that allows students to easily navigate and manage their PDF documents.",
-  //   href: 'https://pdfhouse.vercel.app/',
-  //   purchaseLink: false,
-  //   texture: '', // todo add texture
-  //   logo: '/assets/PDFHOUSE.png',
-  //   logoStyle: {
-  //     backgroundColor: '#000000',
-  //     border: '0.2px solid #000000',
-  //     boxShadow: '0px 0px 60px 0px #FFFFFF',
-  //   },
-  //   spotlight: '/assets/White-Iphone.png',
-  //   flip: false,
-  //   tags: [
-  //     {
-  //       id: 1,
-  //       name: 'Figma',
-  //       path: '/assets/figma.svg',
-  //     },
-  //     {
-  //       id: 2,
-  //       name: 'React.js',
-  //       path: '/assets/react.svg',
-  //     },
-  //     {
-  //       id: 3,
-  //       name: 'Gsap',
-  //       path: '/assets/Gsap.svg',
-  //     },
-  //     {
-  //       id: 4,
-  //       name: 'TailwindCSS',
-  //       path: 'assets/tailwindcss.png',
-  //     },
-  //   ],
-  // },
 ];
 
 /**
@@ -413,8 +374,8 @@ export const workExperiences = [
   {
     id: 4,
     name: 'Haki & Haki Labs',
-    pos: 'Lead Full Stack Developer',
-    duration: '2022 - Current Day',
+    pos: 'Full Stack Developer',
+    duration: '2022 - 2025 (Paused)',
     title: "Played a pivotal role in project lifecycles by devising innovative strategies, contributing 30% of the team's dynamic output.",
     icon: '/assets/HAKI-logo-svg.svg',
     animation: 'victory',
@@ -423,10 +384,37 @@ export const workExperiences = [
     id: 5,
     name: 'iHealth and Wellness Foundation, Inc',
     pos: 'Backend Developer',
-    duration: '2025 - Current Day',
+    duration: '2025 - 2025',
     title: "Spearheaded the online store project, making sure it converts whilst maintaining organisational values and ethics.",
     icon: '/assets/iHEALTH-logo.png',
     animation: 'clapping',
+  },
+  {
+    id: 6,
+    name: 'IDEAS MEDIA COMPANY',
+    pos: 'Full Stack Developer',
+    duration: '2025 - 2025',
+    title: "Contributed to the development of the webapp for Ideas Media Company, a company that speacializes in high-end photography rental services, speacialy curated makeovers and photo sessions, and event coverage.",
+    icon: '/assets/ideasmediacompany.png',
+    animation: 'clapping',
+  },
+  {
+    id: 7,
+    name: 'Everytravell',
+    pos: 'Backend Developer',
+    duration: '2025 - 2025 (Contract Based)',
+    title: "Contributed to the development of the backend for Everytravell, a company that specializes in providing hotel and travel services to individuals and organizations.",
+    icon: '/assets/Everytravell.png',
+    animation: 'victory',
+  },
+  {
+    id: 8,
+    name: 'TURING',
+    pos: 'Ai Trainer',
+    duration: '2025 - Current Day (Contract Based)',
+    title: "Contributed to the training of the AI models for Turing, a company that specializes in accelerating ASI research and building proprietary intelligence.",
+    icon: '/assets/Turing.png',
+    animation: 'salute',
   },
 ];
 
@@ -437,42 +425,47 @@ export const nameShort = 'Anthony';
 export const nameShort2 = 'Obiajulu';
 export const alias = 'AshN♞tGrey';
 export const heroTag = [
-  'A Tech Enthusiast',
-  'Building products & brands',
-  'A Backend Developer',
-  'Designing user-centric experiences',
-  'A Frontend Developer',
-  'A Problem Solver',
-  'Web3 Artist',
-  'I am HIM',
-  'A Brand Developer',
-  'Odogwu Pararan',
-  'Empowering digital transformation',
-  'An Innovator',
-  'Crafting responsive websites',
-  'A Creative Thinker',
-  'Driving business growth',
-  'Creating innovative solutions',
-  'A Product Builder',
-  'Solving complex problems',
-  'Delivering exceptional results',
-  'Transforming ideas into reality',
   'A Full Stack Developer',
-  'Developing high-quality software',
-  'A UI/UX Designer',
   'Building the future of tech',
-  'An Entreprenuer',
-  'A Freelancer',
-  'A Digital Creator',
+  'A Backend Developer',
+  'A Frontend Developer',
+  'An AI Trainer',
+  'Web3 Artist',
+  'The Prompter',
+  'A Problem Solver',
+  'Creating innovative solutions',
+  'Crafting responsive websites',
+  'Developing user-centric experiences',
+  'Developing high-quality software',
+  'Building products & brands',
+  'A Product Builder',
+  'Transforming ideas into reality',
   'A Tech Visionary',
-  'The Prompter'
+  'A Creative Thinker',
+  'An Innovator',
+  'Driving business growth',
+  'Delivering exceptional results',
+  'Solving complex problems',
+  'A Tech Enthusiast',
+  'A Digital Creator',
+  'Empowering digital transformation',
+  'A Brand Developer',
+  'A Freelancer',
+  'An Entrepreneur',
+  'I am HIM',
+  'Odogwu Pararan',
 ];
-export const gridSubIntro = 'Full Stack Developer & UI/UX Designer with 4+ years of experience in building responsive web applications. Skilled in React, Next.js, TypeScript, Node.js, and MongoDB. Passionate about creating intuitive user experiences and optimizing performance.';
-export const techStack = 'I specialize in the MERN stack (MongoDB, Express, React, Node.js). I build dynamic web applications and websites, always expanding my skillset. Passionate about creating innovative solutions and dedicated to delivering high-quality work that exceeds client expectations.';
+export const yearsOfExperience = new Date().getFullYear() - 2021;
+
+export const gridSubIntro = `Full Stack Web & Solidity Developer with ${yearsOfExperience}+ years of hands-on experience building scalable, high-performance web apps and smart contracts. Skilled across modern frameworks like React, Next.js, and Node.js—bringing clean code, speed, and innovation to every project.`;
+
+export const techStack = "I specialize in the MERN stack (MongoDB, Express, React, Node.js) and Solidity, but my toolkit extends to TypeScript, GraphQL, Bun, Remix, ShadCN, and Three.js. I thrive at the intersection of Web2 and Web3, building everything from interactive UIs to secure blockchain integrations. I'm obsessed with clean architecture, performance optimization, and leveraging AI workflows for smarter development.";
+
+export const bioText = `I'm Obiajulu Anthony — a Full Stack Developer, Solidity Engineer, Prompt Engineer, and AI Trainer with over ${yearsOfExperience} years of experience crafting responsive, user-focused digital solutions. I've worked across diverse tech stacks to build seamless user experiences, automate complex workflows, and integrate advanced AI-driven systems. Whether it's designing fluid frontends, engineering scalable backends, or deploying decentralized apps, I approach every project with precision, creativity, and a growth mindset. I love collaborating with cross-functional teams to push boundaries and turn ambitious ideas into reality.`;
+
 export const labelsData = [{ lat: 5.518690, lng: 5.737622, color: "white", size: 30, text: "You can find me here!" }];
-export const remoteWork = 'I work remotely from Nigeria. I am available for remote work opportunities, and I am always looking to collaborate with other developers and designers. If you have a project you would like to discuss or if you would like to learn more about my work, please feel free to reach out to me. I would love to hear from you!';
-export const bioText = 'I am Obiajulu Anthony, a Full Stack Developer and UI/UX Designer with over 4 years of experience in building responsive, high-performance web applications. My expertise spans across both frontend and backend development, with a strong proficiency in React, Next.js, TypeScript, Node.js, and MongoDB. I am passionate about creating intuitive user experiences and optimizing performance to deliver exceptional digital solutions. My skillset also includes working with the latest technologies like Bun, Remix, Shad CN, and Three.js. I thrive in collaborative environments, working closely with cross-functional teams to transform ideas into reality and drive business growth. Dedicated to continuous learning and innovation, I am always seeking new opportunities to expand my knowledge and contribute to impactful projects.';
-export const contactMe = 'I love collaborating on exciting projects! Whether you\'re a developer, designer, or just have a cool idea, let\'s connect and create something amazing together. Reach out to me anytime!';
+export const remoteWork = 'I am available for remote, hybrid, and on-site work opportunities, and I am always looking to collaborate with other developers and designers. If you have a project you would like to discuss or if you would like to learn more about my work, please feel free to reach out to me. I would love to hear from you!';
+export const contactMe = 'I love collaborating on exciting projects! Whether you\'re a developer, designer, or just have a shelved idea, let\'s connect and create something amazing together. Reach out to me anytime!';
 export const socials = {
   LinkedIn: 'https://www.linkedin.com/in/obiajulu-anthony/',
   Linktree: 'https://linktr.ee/ashnotgrey',
