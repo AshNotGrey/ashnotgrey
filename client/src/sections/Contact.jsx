@@ -37,6 +37,7 @@ const Contact = () => {
           from_email: form.email, // from_email is the email of the sender
           to_email: import.meta.env.VITE_EMAILJS_RECEIVER_EMAIL, // to_email is the email of the receiver
           message: form.message, // message is the message to be sent
+          reply_to: form.email, // reply_to is the email to reply to
         },
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY // user ID or public key
       );
