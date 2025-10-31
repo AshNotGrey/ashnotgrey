@@ -18,7 +18,7 @@ const NavBar = () => {
         {navLinks.map(({ name, id, href }) => (
           // todo convert to use react-router-dom Li
           <li key={id} className='nav-li'>
-            {name === "Resume" ? (
+            {name === "Resume" || name === "Linktree" ? (
               <a href={href} target='_blank' rel='noreferrer' className='nav-li_a'>
                 {name}
               </a>
@@ -39,10 +39,6 @@ const NavBar = () => {
     <header className='text-white fixed top-0 left-0 right-0 z-50 bg-black/90' ref={navRef}>
       <div className='max-w-7xl mx-auto'>
         <div className='flex justify-between items-center py-5 mx-auto c-space'>
-          {/* 
-            1. Animate between actual name and alias
-            2. Style like the logo from Projects.jsx
-            */}
           <a
             href='/'
             className='text-neutral-400 text-2xl hover:text-white transition-colors delay-200 duration-1000 ease-in-out space-x-2 uppercase font-poiret'>

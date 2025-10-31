@@ -26,7 +26,12 @@ export const navLinks = [
   {
     id: 5,
     name: 'Resume',
-    href: 'https://tr.ee/9GDhl7V8PW',
+    href: 'https://drive.google.com/file/d/1IXUqEZVL2ifM5Vz1YRMHeU4TkDtTomxw/view?usp=sharing',
+  },
+  {
+    id: 6,
+    name: 'Linktree',
+    href: 'https://linktr.ee/ashnotgrey',
   },
 ];
 
@@ -349,7 +354,8 @@ export const workExperiences = [
     name: 'African Prodigies',
     pos: 'NFT Artist & 2D Animator',
     duration: '2021 - 2022',
-    title: "Adapted quickly to new technologies during the NFT boom of 2021, delivering standout art and animations.",
+    title:
+      'Delivered standout NFT art and animations during the 2021 boom, quickly adapting to new technologies and on-chain creative workflows.',
     icon: '/assets/AshNFT.png',
     animation: 'clapping',
   },
@@ -358,7 +364,8 @@ export const workExperiences = [
     name: 'Doginal Duppets',
     pos: 'Frontend Developer',
     duration: '2024 - Contract Based',
-    title: "Engineered the project in under 24 man-hours, enabling an immediate and successful launch.",
+    title:
+      'Engineered and deployed the project within 24 man-hours, ensuring a seamless and successful public launch on Doginals.',
     icon: '/assets/Duppet.png',
     animation: 'clapping',
   },
@@ -367,7 +374,8 @@ export const workExperiences = [
     name: 'Chuck',
     pos: 'Frontend Developer',
     duration: '2024 - Contract Based',
-    title: "Developed the project in less than 24 man-hours and identified a key compatibility skew in the Uniswap widget API, ensuring a timely launch.",
+    title:
+      'Developed and optimized the frontend in under 24 hours, identifying and resolving a critical Uniswap widget compatibility issue pre-launch.',
     icon: '/assets/Chuck.png',
     animation: 'salute',
   },
@@ -376,7 +384,8 @@ export const workExperiences = [
     name: 'Haki & Haki Labs',
     pos: 'Full Stack Developer',
     duration: '2022 - 2025 (Paused)',
-    title: "Played a pivotal role in project lifecycles by devising innovative strategies, contributing 30% of the team's dynamic output.",
+    title:
+      'Contributed across multiple projects under the Haki ecosystem, designing scalable UIs and backend systems. Spearheaded architectural decisions and boosted team output by 30%.',
     icon: '/assets/HAKI-logo-svg.svg',
     animation: 'victory',
   },
@@ -385,7 +394,8 @@ export const workExperiences = [
     name: 'iHealth and Wellness Foundation, Inc',
     pos: 'Backend Developer',
     duration: '2025 - 2025',
-    title: "Spearheaded the online store project, making sure it converts whilst maintaining organisational values and ethics.",
+    title:
+      "Led backend development for the organization's eCommerce platform, aligning technical architecture with brand ethics and accessibility standards.",
     icon: '/assets/iHEALTH-logo.png',
     animation: 'clapping',
   },
@@ -394,7 +404,8 @@ export const workExperiences = [
     name: 'IDEAS MEDIA COMPANY',
     pos: 'Full Stack Developer',
     duration: '2025 - 2025',
-    title: "Contributed to the development of the webapp for Ideas Media Company, a company that speacializes in high-end photography rental services, speacialy curated makeovers and photo sessions, and event coverage.",
+    title:
+      "Built and deployed the company's PWA for photography rentals, bookings, and event services. Engineered an admin dashboard with React and Tailwind for analytics and content management.",
     icon: '/assets/ideasmediacompany.png',
     animation: 'clapping',
   },
@@ -403,16 +414,18 @@ export const workExperiences = [
     name: 'Everytravell',
     pos: 'Backend Developer',
     duration: '2025 - 2025 (Contract Based)',
-    title: "Contributed to the development of the backend for Everytravell, a company that specializes in providing hotel and travel services to individuals and organizations.",
+    title:
+      'Developed and maintained backend services for hotel and travel booking workflows. Integrated location-based search and multi-organization pricing logic.',
     icon: '/assets/Everytravell.png',
     animation: 'victory',
   },
   {
     id: 8,
-    name: 'TURING',
-    pos: 'Ai Trainer',
+    name: 'Turing',
+    pos: 'AI Trainer',
     duration: '2025 - Current Day (Contract Based)',
-    title: "Contributed to the training of the AI models for Turing, a company that specializes in accelerating ASI research and building proprietary intelligence.",
+    title:
+      'Trained and validated large language models through complex data annotation, reasoning evaluation, and prompt optimization. Supported ASI research and proprietary model development.',
     icon: '/assets/Turing.png',
     animation: 'salute',
   },
@@ -426,46 +439,52 @@ export const nameShort2 = 'Obiajulu';
 export const alias = 'AshN♞tGrey';
 export const heroTag = [
   'A Full Stack Developer',
-  'Building the future of tech',
   'A Backend Developer',
   'A Frontend Developer',
+  'A Solidity Developer',
   'An AI Trainer',
-  'Web3 Artist',
-  'The Prompter',
-  'A Problem Solver',
-  'Creating innovative solutions',
-  'Crafting responsive websites',
-  'Developing user-centric experiences',
-  'Developing high-quality software',
-  'Building products & brands',
+  'An LLM Specialist',
+  'An NFT Artist',
+  'A Prompt Engineer',
+  'A Web3 Builder',
+  'A Creative Technologist',
   'A Product Builder',
-  'Transforming ideas into reality',
-  'A Tech Visionary',
-  'A Creative Thinker',
+  'A Problem Solver',
   'An Innovator',
-  'Driving business growth',
-  'Delivering exceptional results',
-  'Solving complex problems',
-  'A Tech Enthusiast',
+  'A Tech Visionary',
   'A Digital Creator',
-  'Empowering digital transformation',
-  'A Brand Developer',
-  'A Freelancer',
-  'An Entrepreneur',
-  'I am HIM',
-  'Odogwu Pararan',
+  'A Brand Architect',
+  'Building Scalable Web Apps',
+  'Crafting User-Centric Experiences',
+  'Developing High-Quality Software',
+  'Designing Future-Proof Systems',
+  'Building Products That Matter',
+  'Turning Ideas Into Reality',
+  'Empowering Digital Transformation',
+  'Bridging Web2, Web3 & AI',
+  'Engineering The Future of Tech',
+  'Delivering Impact-Driven Solutions',
+  'Transforming Complexity Into Simplicity',
+  'Driving Innovation Through Code',
+  'Building The Next Generation of Experiences',
+  'Freelancing Across The Globe',
+  'Collaborating With Visionary Teams',
+  'Creating Human-Centered Technology'
 ];
+
 export const yearsOfExperience = new Date().getFullYear() - 2021;
 
-export const gridSubIntro = `Full Stack Web & Solidity Developer with ${yearsOfExperience}+ years of hands-on experience building scalable, high-performance web apps and smart contracts. Skilled across modern frameworks like React, Next.js, and Node.js—bringing clean code, speed, and innovation to every project.`;
+export const gridSubIntro = `Full Stack Web & Solidity Developer with ${yearsOfExperience}+ years of hands-on experience building scalable, high-performance web applications and smart contracts. Skilled across modern frameworks like React, Next.js, and Node.js—bringing clean code, performance, and innovation to every build.`;
 
-export const techStack = "I specialize in the MERN stack (MongoDB, Express, React, Node.js) and Solidity, but my toolkit extends to TypeScript, GraphQL, Bun, Remix, ShadCN, and Three.js. I thrive at the intersection of Web2 and Web3, building everything from interactive UIs to secure blockchain integrations. I'm obsessed with clean architecture, performance optimization, and leveraging AI workflows for smarter development.";
+export const techStack = `I specialize in the MERN stack (MongoDB, Express, React, Node.js) and Solidity, but my toolkit extends to TypeScript, GraphQL, Bun, Remix, ShadCN/UI, and Three.js. I thrive at the intersection of Web2, Web3, and AI—engineering everything from interactive UIs to secure blockchain integrations. Obsessed with clean architecture, speed, and leveraging AI workflows for smarter, data-driven development.`;
 
-export const bioText = `I'm Obiajulu Anthony — a Full Stack Developer, Solidity Engineer, Prompt Engineer, and AI Trainer with over ${yearsOfExperience} years of experience crafting responsive, user-focused digital solutions. I've worked across diverse tech stacks to build seamless user experiences, automate complex workflows, and integrate advanced AI-driven systems. Whether it's designing fluid frontends, engineering scalable backends, or deploying decentralized apps, I approach every project with precision, creativity, and a growth mindset. I love collaborating with cross-functional teams to push boundaries and turn ambitious ideas into reality.`;
+export const bioText = `I'm Obiajulu Anthony — a Full Stack Developer, Solidity Engineer, Prompt Engineer, and AI Trainer with ${yearsOfExperience}+ years of experience crafting responsive, user-centered digital solutions. I’ve worked across diverse tech stacks to build seamless experiences, automate complex workflows, and integrate advanced AI systems. Whether it’s designing fluid frontends, engineering scalable backends, or deploying decentralized apps, I approach every project with precision, creativity, and a growth mindset. I thrive in cross-functional collaborations, turning ambitious ideas into reality and bridging Web2, Web3, and AI technologies.`;
+
+export const remoteWork = `I'm available for remote, hybrid, and on-site opportunities worldwide. I’m always open to collaborating with developers, designers, and innovators who share a passion for building meaningful digital products. If you’ve got a project or an idea worth exploring, let’s make it happen.`;
+
+export const contactMe = `Let’s build something extraordinary together! Whether you’re a developer, designer, or visionary with an idea waiting to take shape—reach out anytime, and let’s turn it into reality.`;
 
 export const labelsData = [{ lat: 5.518690, lng: 5.737622, color: "white", size: 30, text: "You can find me here!" }];
-export const remoteWork = 'I am available for remote, hybrid, and on-site work opportunities, and I am always looking to collaborate with other developers and designers. If you have a project you would like to discuss or if you would like to learn more about my work, please feel free to reach out to me. I would love to hear from you!';
-export const contactMe = 'I love collaborating on exciting projects! Whether you\'re a developer, designer, or just have a shelved idea, let\'s connect and create something amazing together. Reach out to me anytime!';
 export const socials = {
   LinkedIn: 'https://www.linkedin.com/in/obiajulu-anthony/',
   Linktree: 'https://linktr.ee/ashnotgrey',
@@ -474,5 +493,6 @@ export const socials = {
   Instagram: 'https://www.instagram.com/ash_not_grey/',
   email: 'official.de.ash@gmail.com',
   resumeURL: 'https://tr.ee/XKFysG99l0',
+  resumeURLGoogleDrive: 'https://drive.google.com/file/d/1IXUqEZVL2ifM5Vz1YRMHeU4TkDtTomxw/view?usp=sharing',
 }
 export const HakiAttribution = { text: 'Powered by', link: 'https://linktr.ee/HakiCorporation', logo: '/assets/HAKI-logo-svg.svg' };
